@@ -19,7 +19,7 @@
 <br />
 
 ## Question 1:
-  - Raviraj Wadnerkar and Ashish Veda
+  - **Raviraj Wadnerkar** and **Ashish Veda**
 
   - Raviraj
 
