@@ -1,0 +1,22 @@
+#cloud-config
+
+# Set up a new user with username 'username' and password 'newpass'
+users:
+  - name: username
+    # Plain text password or hashed password
+    passwd: A
+    # Ensure the user is created with sudo privileges
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    # Ensure the user's home directory is created
+    create_home: true
+    # Define the shell for the user
+    shell: /bin/bash
+    
+
+# Disable password expiration
+chpasswd:
+  expire: False
+
+# Allow users to log in with a password instead of only key-based SSH authentication
+ssh_pwauth: True
+
