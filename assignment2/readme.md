@@ -17,3 +17,24 @@
     - **%ebx** and **%ecx** return values are measured in processor cycles, across all vCPUs.
 
 <br />
+
+## Question 1:
+  - Raviraj Wadnerkar and Ashish Veda
+
+  - Raviraj
+
+  Created the kernel
+  In the VM, installed the necessary kernel modules.
+  Comprehended and researched the assignment's code.
+  The code has been updated to reflect the changes that were discussed.
+  README.md has been updated and documentation has been created.
+
+  - Ashish
+
+  Created the kernel
+  Reviewed the canvas lecture and understood the steps to be taken
+  Did some research on CPUID instructions and CPU leaf nodes.
+  Researched the commands to execute it properly.
+  Recognized where and what changes to make in order to complete the assignment.
+
+<br />
