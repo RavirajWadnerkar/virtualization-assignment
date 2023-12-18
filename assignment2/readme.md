@@ -55,7 +55,7 @@ gcloud compute instances create cmpe283-vm-us --enable-nested-virtualization --z
 
 
 ## Question 2: (Steps used to complete the assignment)
-  Run this code in the SSH
+  Run this code in the VM
 
   ```
   git clone https://github.com/RavirajWadnerkar/linux.git
@@ -109,6 +109,24 @@ gcloud compute instances create cmpe283-vm-us --enable-nested-virtualization --z
   make modules
   sudo make -j 8 modules
   ```
+
+  ```
+  sudo virt-customize -a bionic-server-cloudimg-amd64.img --root-password password:newpass
+  sudo virt-customize -a bionic-server-cloudimg-amd64.img --uninstall cloud-init
+  #cloud-config
+  chpasswd: { expire: False }
+  ssh_pwauth: True
+  ```
+  ```
+  sudo apt-get update
+  sudo apt-get install cpuid
+  ```
+
+  ```
+  sudo qemu-system-x86_64 -enable-kvm -hda bionic-server-cloudimg-amd64.img -drive "file=user-data.img,format=raw" -m 512 -curses -nographic
+  ```
+- username: root
+- password: newpass
 ### **Output:**
 ![output1](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/7ee37458-0b2a-4837-bc18-3a953a33857e)
 
