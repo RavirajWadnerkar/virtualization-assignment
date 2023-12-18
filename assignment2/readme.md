@@ -4,6 +4,11 @@
 
 ![image](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/293eebc0-bd97-48b9-a3d4-3f6d4a308f4c)
 
+**Code**
+```
+gcloud compute instances create cmpe283-vm-us --enable-nested-virtualization --zone=us-central1-a --machine-type=n2-standard-8 --network-interface=network-tier=PREMIUM,subnet=default --create-disk=auto-delete=yes,boot=yes,device-name=instance-1,image=projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20220204,mode=rw,size=200,type=projects/cmpe-283-f23/zones/us-central1-a/diskTypes/pd-ssd --metadata=ssh-keys="SHA256:vi3yBWRq56nOqMVoNi4HOIrEIuoN119ZSSOf9gzv+Xk raviraj wadnerkar@DESKTOP-7NQO4PH"
+```
+
 - The assignment is performed on Google Cloud VM supporting nested virtualiztion(`--enable-nested-virtualization`).
 - Configuration: 
   - Machine Type: **n2-standard-8**
@@ -47,3 +52,60 @@
   
   The output is in [this repository](https://github.com/RavirajWadnerkar/linux)
   <br />
+
+
+
+  Run this code in the SSH
+
+  ```
+  git clone https://github.com/RavirajWadnerkar/linux.git
+  ```
+
+  To review all the files inside boot
+  
+  ```
+  ls /boot/
+  ```
+  
+  ```
+  sudo apt install make
+  ```
+  
+  ```
+  cp /boot/config-5.11.0-1029-gcp .config
+  ```
+  
+  ```
+  make oldconfig
+  ```
+  
+  ```
+  sudo apt install gcc
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo apt-get install bison
+  ```
+  
+  ```
+  make prepare
+  ```
+  
+  ```
+  make -j 8 modules
+  ```
+  
+  ```
+  scripts/config --disable SYSTEM_TRUSTED_KEYS
+  scripts/config --disable SYSTEM_REVOCATION_KEYS
+  ```
+  
+  ```
+  cd arch
+  cd x86
+  cd kvm
+  vi cpuid.c
+  vi vmx/vmx.c
+  cd ..
+  make modules
+  sudo make -j 8 modules
+  ```
