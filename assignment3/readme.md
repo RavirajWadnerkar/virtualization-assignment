@@ -127,7 +127,7 @@ The number of exits increases at a stable rates as these exits are called fairly
 
 ## Question 4:
 
-Of the exit types defined in the SDM, which are the most frequent? Least?
+Of the exit types defined in the SDM, which are the most frequent? Least ?
 
 Most frequent exit is
 Exit #30 - IO_INSTRUCTION
