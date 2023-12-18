@@ -26,9 +26,9 @@
 <br />
 
 ## Question 1:
-  - **Raviraj Wadnerkar** and **Ashish Veda**
+ - **Raviraj Wadnerkar** and **Ashish Veda**
 
-  - Raviraj
+ - Raviraj
 
   Created the kernel
   In the VM, installed the necessary kernel modules.
@@ -36,7 +36,7 @@
   The code has been updated to reflect the changes that were discussed.
   README.md has been updated and documentation has been created.
 
-  - Ashish
+ - Ashish
 
   Created the kernel
   Reviewed the canvas lecture and understood the steps to be taken
@@ -44,4 +44,6 @@
   Researched the commands to execute it properly.
   Recognized where and what changes to make in order to complete the assignment.
 
-<br />
+  
+  The output is in [this repository](https://github.com/RavirajWadnerkar/linux)
+  <br />
