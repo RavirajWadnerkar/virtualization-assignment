@@ -118,6 +118,7 @@ Download and Install the nested VM
 wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img
 sudo virt-customize -a bionic-server-cloudimg-amd64.img --root-password password:newpass
 sudo virt-customize -a bionic-server-cloudimg-amd64.img --uninstall cloud-init
+
 cloud-localds user-data.img user-data
 sudo qemu-system-x86_64 -enable-kvm -hda bionic-server-cloudimg-amd64.img -drive "file=user-data.img,format=raw" -m 512 -curses -nographic
 ```
