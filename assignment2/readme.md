@@ -1,10 +1,17 @@
 # CMPE 283 Assignment 2 
 
+#### **Perfromed the step to generate the rsa key-pair**
+
+![image](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/293eebc0-bd97-48b9-a3d4-3f6d4a308f4c)
+
 - The assignment is performed on Google Cloud VM supporting nested virtualiztion(`--enable-nested-virtualization`).
 - Configuration: 
   - Machine Type: **n2-standard-8**
   - CPU platform: **Intel Cascade Lake**
   - Zone: **us-central1-a**
+
+![image](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/64463f06-3794-4d42-8dd0-4571f423af46)
+
 
 <br />
 
