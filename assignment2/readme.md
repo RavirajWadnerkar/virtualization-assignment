@@ -54,7 +54,7 @@ gcloud compute instances create cmpe283-vm-us --enable-nested-virtualization --z
   <br />
 
 
-
+## Question 2: (Steps used to complete the assignment)
   Run this code in the SSH
 
   ```
@@ -109,3 +109,8 @@ gcloud compute instances create cmpe283-vm-us --enable-nested-virtualization --z
   make modules
   sudo make -j 8 modules
   ```
+### **Output:**
+![output1](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/7ee37458-0b2a-4837-bc18-3a953a33857e)
+
+![output2](https://github.com/RavirajWadnerkar/virtualization-assignment/assets/47893967/9b3ccee5-8e25-488e-80e4-92924cb1e627)
+
